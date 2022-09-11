@@ -9,7 +9,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 // export a default function for API route to work
 export default async function comments(req: any, res: any) {
-  const graphQLClient = new GraphQLClient(graphqlAPI, {
+  const graphQLClient = new GraphQLClient(graphqlAPI!, {
     headers: {
       authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
     },
