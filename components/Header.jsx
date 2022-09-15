@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { getCategories } from "../services";
+import logo from "../public/hio.png";
+import Image from "next/image";
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -14,7 +16,13 @@ const Header = () => {
         <div className="md:float-left block">
           <Link href="/">
             <span className="cursor-pointer font-bold text-4xl text-white">
-              Hashing It Out
+              <Image
+                unoptimized
+                alt={"Logo"}
+                height="50px"
+                width="350px"
+                src={logo}
+              />
             </span>
           </Link>
         </div>
