@@ -4,6 +4,8 @@ import { PostCard, Categories, PostWidget } from "../components";
 import { getPosts } from "../services";
 import { FeaturedPosts } from "../sections";
 
+// Content push 1: Sept. 18th, 2022
+
 const Home = ({ posts }) => {
   return (
     <div className="container mx-auto px-10 mb-8">
