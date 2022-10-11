@@ -6,6 +6,7 @@ import { FeaturedPosts } from "../sections";
 
 // Content push 1: Sept. 18th, 2022
 // Content push 2: Sept. 23rd, 2022
+// Content push 3: Oct. 10th, 2022
 
 const Home = ({ posts }) => {
   return (
